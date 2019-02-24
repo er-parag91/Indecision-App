@@ -1,0 +1,42 @@
+
+//big button
+.big-button{
+  background: $purple;
+  border: none;
+  border-bottom: 0.6rem solid darken($purple, 10%);
+  color: white;
+  font-weight: bold;
+  font-size: $m-size;
+  margin-bottom: $s-size;
+  padding: 2.4rem;
+  width: 100%;
+}
+
+
+.big-button:disabled{
+  opacity: 0.5;
+}
+//small button
+.button{
+  background: $purple;
+  border: none;
+  border-bottom: 0.3rem solid darken($purple, 10%);
+  color: white;
+  font-weight: 500;
+  padding: $xs-size;
+}
+
+//BEM
+.button--link{
+  background: none;
+  border: none;
+  color: $off-white;
+  padding: 0;
+margin: 0 0 0 5px;
+}
+
+@media(min-width: $desktop-device){
+  .big-button{
+    margin-bottom: $l-size
+  }
+}
